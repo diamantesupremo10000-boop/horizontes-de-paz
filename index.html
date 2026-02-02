@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0">
+    <title>Horizontes de Paz</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#81c784">
+</head>
+<body>
+    <div id="ui-layer">
+        <div id="info">
+            <h1>Horizontes</h1>
+            <p>Explora y Restaura</p>
+        </div>
+        <div id="status-bar">
+            <span>🌱</span>
+            <div id="progress-bar-bg"><div id="progress-bar-fill"></div></div>
+        </div>
+        <div id="eco-modal" class="hidden">
+            <h2 id="eco-title"></h2>
+            <p id="eco-text"></p>
+            <button id="close-eco">Cerrar</button>
+        </div>
+    </div>
+
+    <div id="mobile-controls">
+        <div id="joystick-zone"><div id="joystick-knob"></div></div>
+        <div id="camera-touch-zone"></div>
+        <div id="action-buttons">
+            <button id="btn-jump">Saltar</button>
+            <button id="btn-action" class="pulse-btn">✨</button>
+        </div>
+    </div>
+
+    <canvas id="game-canvas"></canvas>
+    <script type="module" src="/src/main.js"></script>
+</body>
+</html>
